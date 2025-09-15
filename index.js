@@ -6,7 +6,7 @@ app.get("/", (req, res) => {
 });
 
 // Azure requires this
-const port = process.env.PORT || 8080;
+const port = 3000;
 app.listen(port, () => {
   console.log(`🚀 Server running on port ${port}`);
 });
