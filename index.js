@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
   res.send(`Hello from Azure! 🚀,${process.env.NAME}`);
 });
 
+app.get("/test1", (req, res) => {
+  res.send(`Hello from Azure! 🚀 tes1`);
+});
+
 app.get("/health", (req, res) => {
   res.json({ 
     status: "healthy", 
