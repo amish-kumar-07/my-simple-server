@@ -7,6 +7,11 @@ app.get("/",async(req,res)=>{
     res.send("Yo I am Alive");
 })
 
+app.get("/health",async(req,res)=>{
+    res.send("Ohhhho");
+})
+
+
 app.listen(PORT,()=>{
     console.log(`I am running at ${PORT}`);
 })
