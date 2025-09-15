@@ -1,17 +1,21 @@
 {
   "name": "simpleserver",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "Simple Express server for Azure deployment",
+  "main": "server.js",
   "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "echo \"No tests specified - skipping\""
+  },
   "dependencies": {
-    "express": "^5.1.0"
-  }
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": ["express", "server", "azure"],
+  "author": "Your Name",
+  "license": "MIT"
 }
