@@ -1,7 +1,7 @@
 import express from "express";
 
 const app = express();
-const PORT = process.env.PORT || 3000; // Azure sets PORT environment variable
+const port = process.env.PORT || 8080;// Azure sets PORT environment variable
 
 app.get("/", async (req, res) => {
     res.json({
@@ -28,7 +28,7 @@ app.get("/api/test", async (req, res) => {
     });
 });
 
-app.listen(PORT, () => {
+app.listen(port, () => {
     console.log(`🚀 I am running at port ${PORT}`);
     console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
 });
