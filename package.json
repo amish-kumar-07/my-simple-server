@@ -8,6 +8,7 @@
     "test": "echo \"No tests specified - that's ok for now!\""
   },
   "dependencies": {
+    "dotenv": "^17.2.2",
     "express": "^4.18.2"
   },
   "engines": {

@@ -1,8 +1,10 @@
 const express = require("express");
+const dotenv = require("dotenv");
+dotenv.config();
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello from Azure! 🚀");
+  res.send(`Hello from Azure! 🚀,${process.env.NAME}`);
 });
 
 app.get("/health", (req, res) => {
